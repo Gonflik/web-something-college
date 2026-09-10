@@ -1,2 +1,4 @@
 # web-something-college
-some stuff for college web-programming lesson type beat
+Лабораторні роботи з предмету web-програмування
+
+[Лабораторна робота 1](/laba1(cities)/)

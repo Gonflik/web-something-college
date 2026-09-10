@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запропонувати місто</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="city1.html">Кіото</a>
+            <a href="city2.html">Неаполь</a>
+            <a href="city3.html">Париж</a>
+            <a href="form.html">Запропонувати місто</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Запропонувати місто для наступного рейтингу</h1>
+        <form>
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="city">Назва міста:</label>
+            <input type="text" id="city" name="city" required>
+            <br><br>
+            <label for="country">Країна:</label>
+            <select id="country" name="country">
+                <option value="japan">Японія</option>
+                <option value="italy">Італія</option>
+                <option value="france">Франція</option>
+                <option value="other">Інша</option>
+            </select>
+            <br><br>
+            <label for="reason">Чому варто відвідати це місто?</label>
+            <br>
+            <textarea id="reason" name="reason" rows="5" cols="40"></textarea>
+            <br><br>
+            <button type="submit">Надіслати</button>
+        </form>
+    </main>
+    <footer>
+        <p>Автор: Данило</p>
+    </footer>
+</body>
+</html>
