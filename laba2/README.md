@@ -26,7 +26,7 @@
 
 Посилання на опубліковану сторінку:
 
-https://quzay.github.io/Web/lab_2(acustic)/index.html
+https://gonflik.github.io/web-something-college/laba2/index.html
 
 Скріншот результату:
 
