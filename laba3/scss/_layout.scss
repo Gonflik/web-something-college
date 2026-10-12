@@ -3,12 +3,11 @@
 
 // ── Header ──────────────────────────────────────────────
 #site-header {
-  position: static;
-
-  @include m.respond-to(v.$bp-tablet) {
-    position: sticky;
-    top: 0;
-  }
+  background: v.$color-surface;
+  border-bottom: 1px solid v.$color-border;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-inner {
