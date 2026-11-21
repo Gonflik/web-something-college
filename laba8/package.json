@@ -1,0 +1,17 @@
+{
+  "name": "acoustic-watch",
+  "version": "1.0.0",
+  "description": "Завантаження даних з публічного API та відображення на сторінці на прикладі навчального вебпроєкту «Акустична варта».",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.105.1",
+    "typescript": "^7.0.2"
+  },
+  "type": "commonjs"
+}
