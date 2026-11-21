@@ -53,5 +53,3 @@ async function loadSensors(): Promise<void> {
 }
 
 loadSensors();
-
-const x: number = "text";
