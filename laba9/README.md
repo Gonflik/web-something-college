@@ -55,7 +55,7 @@ laba9/
 
 ## Результат
 
-Посилання на опублікований проєкт: https://gonflik.github.io/web-something-college/laba9/dist/acoustic-watch/browser/
+Посилання на опублікований проєкт: https://gonflik.github.io/web-something-college/laba9/acoustic-watch/dist/acoustic-watch/browser/
 
 Скріншоти:
 
