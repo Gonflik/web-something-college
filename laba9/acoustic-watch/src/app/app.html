@@ -1,0 +1,62 @@
+<header id="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-name">Акустична варта</span>
+      <span class="brand-tagline">Тиша сьогодні — комфорт завтра</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <h2 class="section-title">Додати датчик</h2>
+    <p class="section-sub">Заповніть поля, і датчик з'явиться у списку.</p>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Назва датчика</label>
+        <input id="name" type="text" placeholder="Назва датчика" [(ngModel)]="newName" />
+      </div>
+      <div class="form-group">
+        <label for="district">Район</label>
+        <input id="district" type="text" placeholder="Район" [(ngModel)]="newDistrict" />
+      </div>
+      <div class="form-group">
+        <label for="noise">Рівень шуму, дБ</label>
+        <input id="noise" type="number" placeholder="Рівень шуму, дБ" [(ngModel)]="newNoiseLevel" />
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" (click)="addSensor()">Додати датчик</button>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Список датчиків</h2>
+
+    <div class="sensor-list">
+      @for (sensor of sensors; track sensor.id) {
+        <article
+          class="sensor-card"
+          [class.sensor-card--active]="sensor.status === 'active'"
+          [class.sensor-card--inactive]="sensor.status === 'inactive'"
+        >
+          <div class="sensor-card__header">
+            <h3 class="sensor-card__name">{{ sensor.name }}</h3>
+            <span class="status-badge" [class.status--active]="sensor.status === 'active'" [class.status--inactive]="sensor.status === 'inactive'">
+              {{ sensor.status }}
+            </span>
+          </div>
+          <p class="sensor-card__area">{{ sensor.district }}</p>
+          <p class="sensor-card__level"><strong>{{ sensor.noiseLevel }} дБ</strong></p>
+
+          <div class="actions">
+            <button type="button" class="btn btn-outline" (click)="toggleStatus(sensor.id)">Змінити статус</button>
+            <button type="button" class="btn btn-danger" (click)="deleteSensor(sensor.id)">Видалити</button>
+          </div>
+        </article>
+      } @empty {
+        <p>Датчиків поки немає.</p>
+      }
+    </div>
+  </section>
+</main>
